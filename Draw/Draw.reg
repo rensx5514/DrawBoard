@@ -1,0 +1,16 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则以下条目将
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\Draw.Document = Draw.Document
+
+
+HKEY_CLASSES_ROOT\Draw.Document\CLSID = {6C434C18-258C-4B3E-A7B9-475CCBB1C502}
+
+HKEY_CLASSES_ROOT\CLSID\{6C434C18-258C-4B3E-A7B9-475CCBB1C502} = Draw.Document
+HKEY_CLASSES_ROOT\CLSID\{6C434C18-258C-4B3E-A7B9-475CCBB1C502}\ProgId = Draw.Document
+
+HKEY_CLASSES_ROOT\CLSID\{6C434C18-258C-4B3E-A7B9-475CCBB1C502}\LocalServer32 = Draw.EXE

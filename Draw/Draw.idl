@@ -1,0 +1,29 @@
+// Draw.idl : Draw.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(Draw.tlb)。
+
+[ uuid(2246199B-7692-4749-8966-2CF67246D054), version(1.0) ]
+library Draw
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CDrawDoc 的主调度接口
+	
+	[ uuid(3079B8B5-BF5A-40C1-B508-422CF1286550) ]
+	dispinterface IDraw
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CDrawDoc 的类信息
+	
+	[ uuid(6C434C18-258C-4B3E-A7B9-475CCBB1C502) ]
+	coclass CDrawDoc
+	{
+		[default] dispinterface IDraw;
+	};
+};
